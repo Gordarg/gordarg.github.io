@@ -1,0 +1,1 @@
+Gordarg Strategy
