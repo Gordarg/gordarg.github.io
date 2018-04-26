@@ -1,8 +1,25 @@
 body{
 }
 .menu {
+    background-color: #2096ba;
     display: block;
+    text-align: center;
+    padding: 1em;
+    color: white;
 }
 .menu a{
     display: inline-block;
+    text-decoration: none;
+    border: solid 0.1em white;
+    padding: 1em;
+    color: inherit;
+}
+.menu a:hover,
+.menu a:focus
+{
+color: #2096ba;
+background-color: white;
+}
+.menu .email{
+    margin-right: 4em;
 }
