@@ -1,3 +1,8 @@
 body{
-    background-color: black;
+}
+.menu {
+    display: block;
+}
+.menu a{
+    display: inline-block;
 }
