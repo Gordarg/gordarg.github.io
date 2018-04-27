@@ -23,6 +23,25 @@ background-color: white;
 .menu .email{
     margin-right: 4em;
 }
+.links{
+    background-color: #df6e21;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+.links a{
+    display: inline-block;
+    text-decoration: none;
+    border: solid 0.1em white;
+    padding: 1em;
+    color: inherit;
+}
+.links a:hover,
+.links a:focus{
+    color: #df6e21;
+    background-color: white;
+}
 footer img{
     height: 4em;
 }
