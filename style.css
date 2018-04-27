@@ -26,3 +26,23 @@ background-color: white;
 footer img{
     height: 4em;
 }
+footer{
+    background-color: #c5919d;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+footer a{
+    display: inline-block;
+    text-decoration: none;
+    border: solid 0.1em white;
+    padding: 1em;
+    color: inherit;
+}
+footer a:hover,
+.footer a:focus
+{
+color: #c5919d;
+background-color: white;
+}
