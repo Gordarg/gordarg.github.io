@@ -10,7 +10,7 @@ body{
 .menu a{
     display: inline-block;
     text-decoration: none;
-    border: solid 0.1em white;
+    border: solid 0.1em #e7b183;
     padding: 1em;
     color: inherit;
 }
@@ -33,7 +33,7 @@ background-color: white;
 .links a{
     display: inline-block;
     text-decoration: none;
-    border: solid 0.1em white;
+    border: solid 0.1em #e7b183;
     padding: 1em;
     color: inherit;
 }
@@ -55,7 +55,7 @@ footer{
 footer a{
     display: inline-block;
     text-decoration: none;
-    border: solid 0.1em white;
+    border: solid 0.1em #e7b183;
     padding: 1em;
     color: inherit;
 }
