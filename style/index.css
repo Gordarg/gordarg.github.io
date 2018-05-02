@@ -1,6 +1,32 @@
-body{
-    background-color: #c5d2db;
+*{
+    font-family: Vazir;
 }
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+ text-align: center;
+}
+header .logo{
+    height: 1em;
+}
+
+.way{
+    background-image: url('../img/city-center.jpg');
+    background-size: auto 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    text-transform: uppercase;
+    text-shadow: 0 0 .5em #2096ba;
+}
+
 .menu {
     background-color: #2096ba;
     display: block;
