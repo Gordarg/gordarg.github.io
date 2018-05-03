@@ -73,7 +73,7 @@ footer img{
     height: 4em;
 }
 footer{
-    background-color: #c5919d;
+    background-color: #d9d9db;
     display: block;
     text-align: center;
     padding: 1em;
@@ -89,6 +89,6 @@ footer a{
 footer a:hover,
 .footer a:focus
 {
-color: #c5919d;
+color: #d9d9db;
 background-color: white;
 }
