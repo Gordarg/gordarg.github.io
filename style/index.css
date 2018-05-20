@@ -71,6 +71,51 @@ background-color: white;
     color: #df6e21;
     background-color: white;
 }
+.projects{
+    text-align: center;
+}
+.projects a{
+    text-decoration: none;
+    border: solid 0.1em #e7b183;
+    display: inline-block;
+    color: white;
+    background-color: #df6e21;
+    width: 11em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-radius: 200%;
+    text-align: center;
+}
+.labs{
+    text-align: center;
+}
+.labs a{
+    text-decoration: none;
+    border: solid 0.1em #e7b183;
+    display: inline-block;
+    color: white;
+    background-color: #df6e21;
+    width: 11em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-radius: 200%;
+    text-align: center; 
+}
+.customers{
+    text-align: center;
+}
+.customers a{
+    text-decoration: none;
+    border: solid 0.1em #e7b183;
+    display: inline-block;
+    color: white;
+    background-color: #df6e21;
+    width: 11em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-radius: 200%;
+    text-align: center;
+}
 footer img{
     height: 4em;
 }
