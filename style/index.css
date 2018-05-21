@@ -13,7 +13,7 @@ header .logo{
 }
 
 .way{
-    background-image: url('../img/city-center.jpg');
+    background-image: url('../content/city-center.jpg');
     background-size: auto 100%;
     background-position: center;
     background-attachment: fixed;
@@ -134,8 +134,16 @@ footer a{
     color: inherit;
 }
 footer a:hover,
-.footer a:focus
+footer a:focus
 {
 color: #d9d9db;
 background-color: white;
+}
+footer .info, footer .social{
+    display: inline-block;
+    max-width: 30%;
+    vertical-align: top;
+}
+footer .info a{
+    display: block;
 }

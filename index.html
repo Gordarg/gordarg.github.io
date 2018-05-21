@@ -1,141 +1,169 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>گردرگ</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Gordarg | Tech and Art">
-    <meta name="keywords" content="Art,Technology">
-    <meta name="author" content="Gordarg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/font.css" rel="stylesheet" />
-    <link href="style/index.css" rel="stylesheet" />
-    <link href="style/slider.css" rel="stylesheet" />
-</head>
-<body>
-    <header>
-        گردرگ |‌ فناوری و هنر
-        <a href="http://gordarg.com">
-            <img src="logo.png" alt="Gordarg Logo" class="logo" />
-        </a>
-    </header>
+   <head>
+      <title>گردرگ</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Gordarg | Tech and Art">
+      <meta name="keywords" content="Art,Technology">
+      <meta name="author" content="Gordarg">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="style/font.css" rel="stylesheet" />
+      <link href="style/index.css" rel="stylesheet" />
+      <link href="style/slider.css" rel="stylesheet" />
 
-    <div class="way">
-        We build services
-    </div>
-
-    <div class="menu">
-        <a href="mailto:info@gordarg.com" class="email">info@gordarg.com</a>
-        <a href="http://fara.gordarg.com">Faragord</a>
-        <a href="http://dartas.ir">Dartas</a>
-        <a href="contact-us.html">Contact us</a>
-    </div>
-
-    <div class="slider">
-        </div class="slideshow-container">
+        <!--
+      <script type="text/javascript" src="https://platform.linkedin.com/in.js">
+         api_key: 77y4srjemoqbq0
+         authorize: true
+         onLoad: onLinkedInLoad
+      </script>
+      <script type="text/javascript">
+         // Setup an event listener to make an API call once auth is complete
+         function onLinkedInLoad() {
+             IN.Event.on(IN, "auth", getProfileData);
+         }
+         
+         // Handle the successful return from the API call
+         function onSuccess(data) {
+             console.log(data);
+             var imageUrl = "http://api.linkedin.com/v1/people/"+data.id+"/picture-url";
+            //  $("img").attr("src",imageUrl);
+         }
+         
+         // Handle an error response from the API call
+         function onError(error) {
+             console.log(error);
+         }
+         
+         // Use the API call wrapper to request the member's basic profile data
+         function getProfileData() {
+             IN.API.Raw("/people/~").result(onSuccess).error(onError);
+         }
+         
+      </script>
+        -->
+   </head>
+   <body>
+      <header>
+         گردرگ |‌ فناوری و هنر
+         <a href="http://gordarg.com">
+         <img src="logo.png" alt="Gordarg Logo" class="logo" />
+         </a>
+      </header>
+      <div class="way">
+         We build services
+      </div>
+      <div class="menu">
+         <a href="mailto:info@gordarg.com" class="email">info@gordarg.com</a>
+         <a href="http://fara.gordarg.com">Faragord</a>
+         <a href="http://dartas.ir">Dartas</a>
+         <a href="contact-us.html">Contact us</a>
+      </div>
+      <div class="news">
+         </div
+         <div class="slider">
+            </div class="slideshow-container">
             <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/img1.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/img2.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+               <div class="numbertext">1 / 3</div>
+               <img src="content/img1.jpg" style="width:100%">
+               <div class="text">Caption Text</div>
             </div>
             <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img3.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+               <div class="numbertext">2 / 3</div>
+               <img src="content/img2.jpg" style="width:100%">
+               <div class="text">Caption Two</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 3</div>
+               <img src="content/img3.jpg" style="width:100%">
+               <div class="text">Caption Three</div>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        <div style="text-align:center">
+         </div>
+         <br>
+         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-        </div>
-    </div>
-
-    <div class="links">
-        <a href="#">CERTIFICATES</a>
-        <a href="#">TIMELINE</a>
-        <a href="contact-us.html">CONTACT US</a>
-    </div>
-
-    <div class="brand">
-
-    </div>
-
-    <div class="projects">
-        <h2>Our Projects</h2>
-        <h3>The Blocky</h3>
-        <a href="https://github.com/Gordarg/SnowFramework">sf</a>
-        <a href="https://github.com/Gordarg/CMS">cms</a>
-        <a href="http://fara.gordarg.com">faragord</a>
-        <a href="gordafarid.html">gordafarid</a>
-
-    </div>
-
-    <div class="labs">
-        <h2>Labs</h2>
-        <h3>Explore the Ocean</h3>
-        <a href="artificial-intelligence.html">AI</a>
-        <a href="business-intelligence.html">BI</a>
-        <a href="software-engineering.html">SE</a>
-        <a href="contact-us.html">UX</a>
-        <a href="data-science.html">DS</a>
-    </div>
-
-    <div class="customers">
-        <h2>Customers</h2>
-        <h3>Playing the Violin On a Ship Deck</h3>
-        <a href="#">customer1</a>
-        <a href="#">customer2</a>
-        <a href="#">customer3</a>
-        <a href="#">customer4</a>
-        <a href="#">customer5</a>
-        <a href="#">customer6</a>
-        <a href="#">customer7</a>
-        <a href="#">customer8</a>
-    </div>
-
-    <footer>
-        <a href="contact-us.html">تماس با ما</a>
-        <a href="our-team.html">تیم ما</a>
-        <a href="about-us.html">درباره ما</a>
-        <br/>
-        <a href="https://sapp.ir/gordarg">
-            <img src="img/soroush.svg" alt="soroush Logo" class="logo" />
-        </a>
-        <a href="https://www.facebook.com/Gordarg-گُرْدَرْگ-1473617349342120/">
-            <img src="img/facebook.svg" alt="facebook Logo" class="logo" />
-        </a>
-        <a href="https://github.com/gordarg">
-            <img src="img/github.svg" alt="github Logo" class="logo" />
-        </a>
-        <a href="http://t.me/gordarg">
-            <img src="img/telegram.svg" alt="telegram Logo" class="logo" />
-        </a>
-        <a href="http://instagram.com/gordarg">
-            <img src="img/instagram.svg" alt="instagram Logo" class="logo" />
-        </a>
-        <a href="https://plus.google.com/113668139415865218050">
-            <img src="img/plus.svg" alt="plus Logo" class="logo" />
-        </a>
-        <a href="https://www.youtube.com/channel/UCWXI-eLQGCRmWPHUNtcdFWQ?view_as=subscriber">
-            <img src="img/youtube.svg" alt="youtube Logo" class="logo" />
-        </a>
-        <a href="https://twitter.com/gordarg_com">
-            <img src="img/twitter.svg" alt="twitter Logo" class="logo" />
-        </a>
-        <a href="https://web.igap.net/#iG?u=@Faragord">
-            <img src="img/igap.svg" alt="igap Logo" class="logo" />
-        </a>
-        <br/>
-                تمامی حقوق محفوظ است ۱۳۹۷
-    </footer>
-</body>
+         </div>
+      </div>
+      </div>
+      <div class="links">
+         <a href="#">CERTIFICATES</a>
+         <a href="#">TIMELINE</a>
+         <a href="contact-us.html">CONTACT US</a>
+      </div>
+      <div class="projects">
+         <h2>Our Projects</h2>
+         <h3>The Blocky</h3>
+         <a href="https://github.com/Gordarg/SnowFramework">sf</a>
+         <a href="https://github.com/Gordarg/CMS">cms</a>
+         <a href="http://fara.gordarg.com">faragord</a>
+         <a href="gordafarid.html">gordafarid</a>
+      </div>
+      <div class="labs">
+         <h2>Labs</h2>
+         <h3>Explore the Ocean</h3>
+         <a href="artificial-intelligence.html">AI</a>
+         <a href="business-intelligence.html">BI</a>
+         <a href="software-engineering.html">SE</a>
+         <a href="contact-us.html">UX</a>
+         <a href="data-science.html">DS</a>
+      </div>
+      <div class="customers">
+         <h2>Customers</h2>
+         <h3>Playing the Violin On a Ship Deck</h3>
+         <a href="#">customer1</a>
+         <a href="#">customer2</a>
+         <a href="#">customer3</a>
+         <a href="#">customer4</a>
+         <a href="#">customer5</a>
+         <a href="#">customer6</a>
+         <a href="#">customer7</a>
+         <a href="#">customer8</a>
+      </div>
+      <footer>
+         <div class="social">
+            <a href="https://sapp.ir/gordarg">
+            <img src="img/soroush.svg" alt="Soroush Logo" class="logo" />
+            </a>
+            <a href="https://www.facebook.com/Gordarg-گُرْدَرْگ-1473617349342120/">
+            <img src="img/facebook.svg" alt="Facebook Logo" class="logo" />
+            </a>
+            <a href="https://github.com/gordarg">
+            <img src="img/github.svg" alt="Github Logo" class="logo" />
+            </a>
+            <a href="http://t.me/gordarg">
+            <img src="img/telegram.svg" alt="Telegram Logo" class="logo" />
+            </a>
+            <a href="http://instagram.com/gordarg">
+            <img src="img/instagram.svg" alt="Instagram Logo" class="logo" />
+            </a>
+            <a href="https://plus.google.com/113668139415865218050">
+            <img src="img/plus.svg" alt="GooglePlus Logo" class="logo" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCWXI-eLQGCRmWPHUNtcdFWQ?view_as=subscriber">
+            <img src="img/youtube.svg" alt="Youtube Logo" class="logo" />
+            </a>
+            <a href="https://twitter.com/gordarg_com">
+            <img src="img/twitter.svg" alt="Twitter Logo" class="logo" />
+            </a>
+            <a href="https://web.igap.net/#iG?u=@Faragord">
+            <img src="img/igap.svg" alt="iGap Logo" class="logo" />
+            </a>
+            <a href="https://www.linkedin.com/company/gordarg/">
+            <img src="img/linkedin.svg" alt="LinkedIn Logo" class="logo" />
+            </a>
+         </div>
+         <div class="info">
+            <a href="contact-us.html">Contact Us</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="about-us.html">About Us</a>
+            <a href="style-guide.html">Style Guide</a>
+         </div>
+         <br/>
+         تمامی حقوق محفوظ است ۱۳۹۷
+      </footer>
+   </body>
 </html>
