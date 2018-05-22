@@ -86,6 +86,12 @@ background-color: #d9d9db;
     border-radius: 200%;
     text-align: center;
 }
+.projects a:hover,
+.projects a:focus
+{
+color: #8ad2ce;
+background-color: #d9d9db;
+}
 .labs{
     text-align: center;
 }
@@ -101,6 +107,12 @@ background-color: #d9d9db;
     border-radius: 200%;
     text-align: center; 
 }
+.labs a:hover,
+.labs a:focus
+{
+color: #8ad2ce;
+background-color: #d9d9db;
+}
 .customers{
     text-align: center;
 }
@@ -115,6 +127,12 @@ background-color: #d9d9db;
     padding-bottom: 5em;
     border-radius: 200%;
     text-align: center;
+}
+.customers a:hover,
+.customers a:focus
+{
+color: #8ad2ce;
+background-color: #d9d9db;
 }
 footer img{
     height: 4em;
