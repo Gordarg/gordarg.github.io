@@ -20,19 +20,19 @@ header .logo{
     background-repeat: no-repeat;
     text-align: center;
     font-size: 4em;
-    color: white;
+    color:#d9d9db;
     padding-top: 2.5em;
     padding-bottom: 2.5em;
     text-transform: uppercase;
-    text-shadow: 0 0 .5em #2096ba;
+    text-shadow: 0 0 .5em #8ad2ce;
 }
 
 .menu {
-    background-color: #2096ba;
+    background-color: #8ad2ce;
     display: block;
     text-align: center;
     padding: 1em;
-    color: white;
+    color:#d9d9db;
 }
 .menu a{
     display: inline-block;
@@ -44,8 +44,8 @@ header .logo{
 .menu a:hover,
 .menu a:focus
 {
-color: #0e8e97;
-background-color: white;
+color: #8ad2ce;
+background-color: #d9d9db;
 }
 .menu .email{
     margin-right: 4em;
@@ -58,8 +58,8 @@ background-color: white;
     text-decoration: none;
     border: solid 0.1em #e7b183;
     display: inline-block;
-    color: white;
-    background-color: #df6e21;
+    color: #d9d9db;
+    background-color: #0e8e97;
     width: 11em;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -68,8 +68,8 @@ background-color: white;
 }
 .links a:hover,
 .links a:focus{
-    color: #df6e21;
-    background-color: white;
+    color: #0e8e97;
+    background-color: #d9d9db;
 }
 .projects{
     text-align: center;
@@ -78,8 +78,8 @@ background-color: white;
     text-decoration: none;
     border: solid 0.1em #e7b183;
     display: inline-block;
-    color: white;
-    background-color: #df6e21;
+    color: #d9d9db;
+    background-color: #0e8e97;
     width: 11em;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -93,8 +93,8 @@ background-color: white;
     text-decoration: none;
     border: solid 0.1em #e7b183;
     display: inline-block;
-    color: white;
-    background-color: #df6e21;
+    color: #d9d9db;
+    background-color: #0e8e97;
     width: 11em;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -108,8 +108,8 @@ background-color: white;
     text-decoration: none;
     border: solid 0.1em #e7b183;
     display: inline-block;
-    color: white;
-    background-color: #df6e21;
+    color: #d9d9db;
+    background-color: #0e8e97;
     width: 11em;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -124,7 +124,7 @@ footer{
     display: block;
     text-align: center;
     padding: 1em;
-    color: white;
+    color: #d9d9db;
 }
 footer a{
     display: inline-block;
