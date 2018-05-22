@@ -32,12 +32,12 @@ header .logo{
     display: block;
     text-align: center;
     padding: 1em;
-    color:#d9d9db;
+    color:#ef3828;
 }
 .menu a{
     display: inline-block;
     text-decoration: none;
-    border: solid 0.1em #e7b183;
+    border: solid 0.1em #ffdc1d;
     padding: 1em;
     color: inherit;
 }
@@ -56,9 +56,9 @@ background-color: #d9d9db;
 }
 .links a{
     text-decoration: none;
-    border: solid 0.1em #e7b183;
+    border: solid 0.1em #ffdc1d;
     display: inline-block;
-    color: #d9d9db;
+    color: #ef3828;
     background-color: #0e8e97;
     width: 11em;
     padding-top: 5em;
@@ -76,9 +76,9 @@ background-color: #d9d9db;
 }
 .projects a{
     text-decoration: none;
-    border: solid 0.1em #e7b183;
+    border: solid 0.1em #ffdc1d;
     display: inline-block;
-    color: #d9d9db;
+    color: #ef3828;
     background-color: #0e8e97;
     width: 11em;
     padding-top: 5em;
@@ -97,9 +97,9 @@ background-color: #d9d9db;
 }
 .labs a{
     text-decoration: none;
-    border: solid 0.1em #e7b183;
+    border: solid 0.1em #ffdc1d;
     display: inline-block;
-    color: #d9d9db;
+    color: #ef3828;
     background-color: #0e8e97;
     width: 11em;
     padding-top: 5em;
@@ -118,9 +118,9 @@ background-color: #d9d9db;
 }
 .customers a{
     text-decoration: none;
-    border: solid 0.1em #e7b183;
+    border: solid 0.1em #ffdc1d;
     display: inline-block;
-    color: #d9d9db;
+    color: #ef3828;
     background-color: #0e8e97;
     width: 11em;
     padding-top: 5em;
@@ -142,12 +142,12 @@ footer{
     display: block;
     text-align: center;
     padding: 1em;
-    color: #d9d9db;
+    color: #ef3828;
 }
 footer a{
     display: inline-block;
     text-decoration: none;
-    border: solid 0.1em #e7b183;
+    border: solid 0.1em #ffdc1d;
     padding: 1em;
     color: inherit;
 }
