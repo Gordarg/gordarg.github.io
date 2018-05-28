@@ -96,6 +96,10 @@ background-color: #d9d9db;
     border-radius: 200%;
     text-align: center;
 }
+.projects img{
+    max-height: 100%;
+    max-width: 100%;
+}
 .projects a:hover,
 .projects a:focus
 {
