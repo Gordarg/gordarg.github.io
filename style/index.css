@@ -1,3 +1,13 @@
+*, a, button, input, textarea, select {
+    -webkit-transition:filter 1s, width 1s, height 1s, background 1s, color 1s, font 1s, box-shadow 2s, -webkit-transform 1s, opacity 2s, border 1s;
+    transition:filter 1s, width 1s, height 1s, background 1s, color 1s, font 1s, box-shadow 2s, transform 1s, opacity 2s, border 1s;
+}
+
+
+/******  ANIMATION TOP    *******/
+/******  OTHER BELOW    *******/
+
+
 *{
     font-family: Vazir;
 }
