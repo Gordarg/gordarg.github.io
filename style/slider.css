@@ -6,7 +6,6 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   margin: auto;
-  margin-top: -1em;  
   max-width: 1000px;
   position: relative;
 }
