@@ -63,7 +63,7 @@ background-color: #d9d9db;
     margin-right: 4em;
 }
 .links{
-    
+    display: block;
     text-align: center;    
 }
 .links a{
@@ -89,16 +89,21 @@ background-color: #d9d9db;
 .projects a{
     text-decoration: none;
     border: solid 0.1em #8ad2ce;
-    display: inline-block;
+    /* display: inline-block; */
+    display: inline-flex;
+    vertical-align: middle;
+    align-content: center;
     color: black;
     background-color: #0e8e97;
     width: 11em;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: 2em;
+    margin: 1em;
+    height: 11em;
     border-radius: 200%;
-    text-align: center;
 }
 .projects img{
+    height: auto;
+    width: auto;
     max-height: 100%;
     max-width: 100%;
 }
