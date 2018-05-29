@@ -12,6 +12,8 @@
     font-family: Vazir;
 }
 body{
+    background-image:  url('../content/pattern.png');
+    background-repeat: repeat;
     padding: 0;
     margin: 0;
 }
