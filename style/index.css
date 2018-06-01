@@ -5,6 +5,9 @@
 
 
 /******  ANIMATION TOP    *******/
+h2{
+    margin-top: 0;
+}
 /******  OTHER BELOW    *******/
 
 
@@ -12,8 +15,8 @@
     font-family: Vazir;
 }
 body{
-    background-image:  url('../content/pattern.png');
-    background-repeat: repeat;
+    /* background-image:  url('../content/pattern.png');
+    background-repeat: repeat; */
     padding: 0;
     margin: 0;
 }
@@ -25,11 +28,11 @@ header .logo{
 }
 
 .way{
-    background-image: url('../content/city-center.jpg');
+    /* background-image: url('../content/city-center.jpg');
     background-size: auto 100%;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     text-align: center;
     font-size: 4em;
     color:#d9d9db;
@@ -63,6 +66,7 @@ background-color: #d9d9db;
     margin-right: 4em;
 }
 .links{
+    background-color: #655f61;
     display: block;
     text-align: center;    
 }
@@ -83,7 +87,12 @@ background-color: #d9d9db;
     color: #0e8e97;
     background-color: #d9d9db;
 }
+.slideshow-container{
+    display: block;
+}
 .projects{
+    background-color: 	#645049;
+    margin: 0;
     text-align: center;
 }
 .projects a{
@@ -114,6 +123,8 @@ color: #8ad2ce;
 background-color: #d9d9db;
 }
 .labs{
+    background-color: 	#5598a9;
+    margin: 0;
     text-align: center;
 }
 .labs a{
@@ -135,6 +146,7 @@ color: #8ad2ce;
 background-color: #d9d9db;
 }
 .customers{
+    background-color: #8ad2ce;
     text-align: center;
 }
 .customers a{
