@@ -1,3 +1,37 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #d9d9db;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header, footer{
+    flex: 4 100%;
+    margin: 0;
+}
+header {
+    padding: 1em;
+}
+footer {
+    text-align: center;
+}
+header img{
+    position: absolute;
+    width: 7em;
+    right: 2em;
+    top: 2em;
+}
+.navigation{
+    flex: 1 15em;
+    padding: 2em;
+    background-color: white;
+}
+body > p{
+    background-color: rgb(15, 122, 216);
+    padding: 2em;
+    flex: 3 45em;
+    margin: 1em;
 }

@@ -19,12 +19,17 @@ import io
 # Create instances of StringBuilder
 header = stringbuilder.stringbuilder()
 footer = stringbuilder.stringbuilder()
-menu = stringbuilder.stringbuilder()
+homepage = stringbuilder.stringbuilder() # For index.html
+menu = stringbuilder.stringbuilder() # For menu
 doc = stringbuilder.stringbuilder() # For each file
 
 # Read header file line by line
 for l in open('master/header.txt').readlines():
     header.Append(l)
+
+# Read homepage file line by line
+for l in open('master/index.txt').readlines():
+    homepage.Append(l)
 
 # Read footer file line by line
 for l in open('master/footer.txt').readlines():
@@ -38,8 +43,9 @@ i = 0;
 menu.Append('<ul class="navigation">');
 for t in open('nav.md').readlines(): # Reads each file based on nav.md
     if t.startswith('-'):
-        directory = t[2:-1] + '/'
-        menu.Append('<li class="grp">' + directory + '</li>')
+        directory = t[2:-1]
+        menu.Append(directory)
+        directory +=  '/'
         continue;
     elif t.startswith('    1.'):
         document = t[7:-1]
@@ -51,7 +57,7 @@ for t in open('nav.md').readlines(): # Reads each file based on nav.md
         newfilename = "a_" + str(n)[:-2] + '.html';
         # Add to dictionary
         index[filename] = newfilename
-        menu.Append('<li><a href="' + newfilename + '">' + filename + '</a></li>');
+        menu.Append('<li><a href="' + newfilename + '">' + document + '</a></li>');
 menu.Append('</ul>');
 
 # Read each file content
@@ -69,3 +75,9 @@ while i < len(index) - 1:
         f.write(unicode(menu))
         f.write(unicode(doc))
         f.write(unicode(footer))
+
+with io.open('index.html','w',encoding='utf8') as f:
+    f.write(unicode(header))
+    f.write(unicode(menu))
+    f.write(unicode(homepage))
+    f.write(unicode(footer))

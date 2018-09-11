@@ -9,5 +9,7 @@
 </head>
 <body>
 <header>
+    <h1>Gordarg</h1>
+    <img src="brand/Icon.png" alt="Gordarg Logo" />
+    <span>We build services</span>
 </header>
-<div class="content">
