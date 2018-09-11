@@ -73,7 +73,7 @@ while i < len(index) - 1:
     with io.open(index.values()[i],'w',encoding='utf8') as f:
         f.write(unicode(header))
         f.write(unicode(menu))
-        f.write(unicode(doc))
+        f.write('<div class="content">' + unicode(doc) + '</div>')
         f.write(unicode(footer))
 
 with io.open('index.html','w',encoding='utf8') as f:

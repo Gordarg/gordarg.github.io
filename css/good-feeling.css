@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'Main';
+    src: url('../font/Vazir.ttf');
+}
+* {
+    font-family: 'Main' !important;
+}
 html, body{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #d9d9db;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,9 +20,19 @@ header, footer{
 }
 header {
     padding: 1em;
-}
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(217,217,219,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(217,217,219,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(217,217,219,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(217,217,219,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(217,217,219,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(217,217,219,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9d9db', GradientType=0 );\
+}    
 footer {
     text-align: center;
+    background-color: #655f61;
+    color: white;
 }
 header img{
     position: absolute;
@@ -25,12 +41,32 @@ header img{
     top: 2em;
 }
 .navigation{
+    border: solid 0.05em #8ad2ce;
+    border-radius: .5em;
+    margin: .5em;
     flex: 1 15em;
     padding: 2em;
+    list-style-type: none;
     background-color: white;
+    overflow-y: auto;
+    height: 40em;
 }
-body > p{
-    background-color: rgb(15, 122, 216);
+.navigation a{
+    background: none;
+    font-size: medium;
+    text-decoration: none;
+    padding-left: 1em;
+    color: #0e8e97;
+    padding: .25em;
+    display: block;
+}
+.navigation a:hover,
+.navigation a:focus{
+    border-left: solid #0e8e97 .05em;
+    background-color: #0e8e97;
+    color: white;
+}
+body .content{
     padding: 2em;
     flex: 3 45em;
     margin: 1em;
