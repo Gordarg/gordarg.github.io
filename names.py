@@ -3,6 +3,7 @@
 # Description: Create single names based on path
 # Author: MohammadReza Tayyebi
 # Source: https://mail.python.org/pipermail/python-win32/2005-April/003100.html
+#         https://stackoverflow.com/questions/2510716/short-python-alphanumeric-hash-with-minimal-collisions
 
 # Libraries
 import base64
