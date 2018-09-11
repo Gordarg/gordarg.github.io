@@ -4,7 +4,7 @@
 # Author: MohammadReza Tayyebi
 # Source: https://stackoverflow.com/questions/2414667/python-string-class-like-stringbuilder-in-c
 
-#Libraries
+# Libraries
 from cStringIO import StringIO
 
 # BOF

@@ -1,16 +1,19 @@
 # In his name
-
 # Title: Flat file documentation generator
 # Description: Converts a collection of MarkDown files to MarkUp output
 # Author: MohammadReza Tayyebi
 
 # Libraries
-
 # Name: MarkDown2 by @trentm (Github)
-# print(markdown2.markdown("*boo!*"))
 import markdown2
+# Name: StringBuilder by @tayyebi (Github)
 import stringbuilder
+# Name: Names PY by @tayyebi (Github)
+import names
+# Name: OS
 import os.path
+# Name: IO
+import io
 
 #Read the header
 # Create instances of StringBuilder
@@ -26,21 +29,33 @@ for l in open('master/header.txt').readlines():
 for l in open('master/footer.txt').readlines():
     footer.Append(l)
 
-# Read each file based on nav.md
-directory = None
-document = None
-for t in open('nav.md').readlines():
+# Get files
+index = [] # This will store file names
+directory = None # This will switch directoy foreach sub located file
+for t in open('nav.md').readlines(): # Reads each file based on nav.md
     if t.startswith('-'):
         directory = t[2:-1] + '/'
         continue;
     elif t.startswith('    1.'):
         document = t[7:-1]
-    
-        # Read the file
-        doc.Cls()
-        path = 'content/' + directory + document + '.md';
-        if not os.path.exists(path):
-            continue;
-        for l in open(path).readlines():
-            doc.Append(l)
-    print (doc)
+        index.append('content/' + directory + document + '.md')
+
+# Build menu
+# TODO
+
+# Read each file content
+i = -1;
+while i < len(index) - 1:
+    i += 1 # Because of `continue` we have to do ++ here
+    doc.Cls()
+    if not os.path.exists(index[i]):
+        continue;
+    with io.open(index[i], 'r', encoding='utf8') as f:
+        doc.Append(markdown2.markdown(f.read()))
+    # File name
+    n = names.names() # Create an instance of Names PY
+    n.Generate(index[i])
+    with io.open("a_" + str(n) + '.html','w',encoding='utf8') as f:
+        f.write(unicode(header))
+        f.write(unicode(doc))
+        f.write(unicode(footer))
