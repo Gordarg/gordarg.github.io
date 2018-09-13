@@ -5,17 +5,13 @@
     1. Logo
     1. Color
     1. Font
-- Projects
-    1. spaghetti
-    1. marinara sauce
-    1. salt
 - KMS
-    1. spaghetti
-    1. marinara sauce
-    1. salt
+    1. Getting Started
+    1. Customize
+    1. Develop
 - Snow Framework
-    1. spaghetti
-    1. marinara sauce
-    1. salt
+    1. Installation
+    1. Implemention
+    1. Developement
 - Gordafarid
     1. About
