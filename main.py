@@ -64,20 +64,20 @@ menu.Append('</ul>');
 i = -1;
 while i < len(index) - 1:
     i += 1 # Because of `continue` we have to do ++ here
-    print(index.keys()[i])
+    print(list(index.keys())[i])
     doc.Cls()
-    if not os.path.exists(index.keys()[i]):
+    if not os.path.exists(list(index.keys())[i]):
         continue;
-    with io.open(index.keys()[i], 'r', encoding='utf8') as f:
+    with io.open(list(index.keys())[i], 'r', encoding='utf8') as f:
         doc.Append(markdown2.markdown(f.read()))
-    with io.open(index.values()[i],'w',encoding='utf8') as f:
-        f.write(unicode(header))
-        f.write(unicode(menu))
-        f.write('<div class="content">' + unicode(doc) + '</div>')
-        f.write(unicode(footer))
+    with io.open(list(index.values())[i],'w',encoding='utf8') as f:
+        f.write(str(header))
+        f.write(str(menu))
+        f.write('<div class="content">' + str(doc) + '</div>')
+        f.write(str(footer))
 
 with io.open('index.html','w',encoding='utf8') as f:
-    f.write(unicode(header))
-    f.write(unicode(menu))
-    f.write(unicode(homepage))
-    f.write(unicode(footer))
+    f.write(str(header))
+    f.write(str(menu))
+    f.write(str(homepage))
+    f.write(str(footer))

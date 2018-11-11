@@ -31,10 +31,12 @@ class names:
     def __str__(self):
         # Method 1
         # return self._output
-        
+
         # Method 2
         # return ''.join(x.encode('hex') for x in self._storage)
 
         # Method 3
-        hasher = hashlib.sha1(self._storage)
-        return base64.urlsafe_b64encode(hasher.digest()[0:10])
+        hasher = hashlib.sha1(self._storage.encode('utf-8'))
+        output = str(base64.urlsafe_b64encode(hasher.digest()))[2:15]
+        #print (output)
+        return output

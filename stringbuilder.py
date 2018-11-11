@@ -5,7 +5,7 @@
 # Source: https://stackoverflow.com/questions/2414667/python-string-class-like-stringbuilder-in-c
 
 # Libraries
-from cStringIO import StringIO
+import io
 
 # BOF
 class stringbuilder:
@@ -13,7 +13,7 @@ class stringbuilder:
 
     def __init__(self):
         ''' Constructor for this class '''
-        self._file_str = StringIO()
+        self._file_str = io.StringIO()
 
     def Append(self, str):
         self._file_str.write(str)
