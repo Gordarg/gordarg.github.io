@@ -41,7 +41,7 @@ directory = None # This will switch directoy foreach sub located file
 i = 0;
 
 menu.Append('<ul class="navigation">');
-for t in open('../nav.md').readlines(): # Reads each file based on nav.md
+for t in open('../content/nav.md').readlines(): # Reads each file based on nav.md
     if t.startswith('-'):
         directory = t[2:-1]
         menu.Append(directory)
