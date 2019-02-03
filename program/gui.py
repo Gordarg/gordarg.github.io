@@ -50,27 +50,6 @@ class Ui_MainWindow(object):
         self.actionOpen.triggered.connect(MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-
-    def load_project_structure(self, startpath, tree):
-        # cc: https://stackoverflow.com/questions/5144830
-        """
-        Load Project structure tree
-        :param startpath: 
-        :param tree: 
-        :return: 
-        """
-        import os
-        from PyQt5.QtWidgets import QTreeWidgetItem
-        from PyQt5.QtGui import QIcon
-        for element in os.listdir(startpath):
-            path_info = startpath + "/" + element
-            parent_itm = QTreeWidgetItem(tree, [os.path.basename(element)])
-            if os.path.isdir(path_info):
-                self.load_project_structure(path_info, parent_itm)
-                # parent_itm.setIcon(0, QIcon('assets/folder.ico'))
-            # else:
-                # parent_itm.setIcon(0, QIcon('assets/file.ico'))
-
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -79,15 +58,4 @@ class Ui_MainWindow(object):
         self.actionOpen.setText(_translate("MainWindow", "Open Project"))
         self.actionFile.setText(_translate("MainWindow", "File"))
         self.actionFolder.setText(_translate("MainWindow", "Folder"))
-        self.load_project_structure("/var/www/html",self.treeWidget)
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
 

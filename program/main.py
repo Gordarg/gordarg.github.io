@@ -24,15 +24,15 @@ menu = stringbuilder.stringbuilder() # For menu
 doc = stringbuilder.stringbuilder() # For each file
 
 # Read header file line by line
-for l in open('master/header.txt').readlines():
+for l in open('../master/header.txt').readlines():
     header.Append(l)
 
 # Read homepage file line by line
-for l in open('master/index.txt').readlines():
+for l in open('../master/index.txt').readlines():
     homepage.Append(l)
 
 # Read footer file line by line
-for l in open('master/footer.txt').readlines():
+for l in open('../master/footer.txt').readlines():
     footer.Append(l)
 
 # Get files and build menu
@@ -52,7 +52,7 @@ for t in open('nav.md').readlines(): # Reads each file based on nav.md
         i += 1
         # File name
         n = names.names() # Create an instance of Names PY
-        filename = 'content/' + directory + document + '.md'
+        filename = '../content/' + directory + document + '.md'
         n.Generate(filename)
         newfilename = "a_" + str(n)[:-2] + '.html';
         # Add to dictionary
@@ -76,7 +76,7 @@ while i < len(index) - 1:
         f.write('<div class="content">' + str(doc) + '</div>')
         f.write(str(footer))
 
-with io.open('index.html','w',encoding='utf8') as f:
+with io.open('../index.html','w',encoding='utf8') as f:
     f.write(str(header))
     f.write(str(menu))
     f.write(str(homepage))
