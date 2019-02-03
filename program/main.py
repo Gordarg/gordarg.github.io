@@ -41,7 +41,7 @@ directory = None # This will switch directoy foreach sub located file
 i = 0;
 
 menu.Append('<ul class="navigation">');
-for t in open('nav.md').readlines(): # Reads each file based on nav.md
+for t in open('../nav.md').readlines(): # Reads each file based on nav.md
     if t.startswith('-'):
         directory = t[2:-1]
         menu.Append(directory)
@@ -70,7 +70,7 @@ while i < len(index) - 1:
         continue;
     with io.open(list(index.keys())[i], 'r', encoding='utf8') as f:
         doc.Append(markdown2.markdown(f.read()))
-    with io.open(list(index.values())[i],'w',encoding='utf8') as f:
+    with io.open('../'+list(index.values())[i],'w',encoding='utf8') as f:
         f.write(str(header))
         f.write(str(menu))
         f.write('<div class="content">' + str(doc) + '</div>')
