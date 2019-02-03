@@ -52,6 +52,7 @@ class Ui_MainWindow(object):
 
 
     def load_project_structure(self, startpath, tree):
+        # cc: https://stackoverflow.com/questions/5144830
         """
         Load Project structure tree
         :param startpath: 
