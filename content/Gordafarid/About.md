@@ -1,5 +1,3 @@
-### In his name
-
 # About GORDAFARID
 
 ## Features
