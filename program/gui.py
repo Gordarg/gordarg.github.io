@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit.setGeometry(QtCore.QRect(260, 10, 481, 351))
         self.plainTextEdit.setObjectName("plainTextEdit")
         self.treeWidget = QtWidgets.QTreeWidget(self.centralwidget)
-        self.treeWidget.setGeometry(QtCore.QRect(0, 10, 256, 351))
+        self.treeWidget.setGeometry(QtCore.QRect(5, 10, 251, 351))
         self.treeWidget.setObjectName("treeWidget")
         self.treeWidget.headerItem().setText(0, "1")
         MainWindow.setCentralWidget(self.centralwidget)
@@ -40,22 +40,26 @@ class Ui_MainWindow(object):
         self.actionFile.setObjectName("actionFile")
         self.actionFolder = QtWidgets.QAction(MainWindow)
         self.actionFolder.setObjectName("actionFolder")
+        self.actionBuild = QtWidgets.QAction(MainWindow)
+        self.actionBuild.setObjectName("actionBuild")
         self.menuNew.addAction(self.actionFile)
         self.menuNew.addAction(self.actionFolder)
         self.menuFile.addAction(self.actionOpen)
         self.menuFile.addAction(self.menuNew.menuAction())
+        self.menuFile.addAction(self.actionBuild)
         self.menubar.addAction(self.menuFile.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.actionOpen.triggered.connect(MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        MainWindow.setTabOrder(self.treeWidget, self.plainTextEdit)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Docs Editor"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuNew.setTitle(_translate("MainWindow", "New"))
         self.actionOpen.setText(_translate("MainWindow", "Open Project"))
         self.actionFile.setText(_translate("MainWindow", "File"))
         self.actionFolder.setText(_translate("MainWindow", "Folder"))
+        self.actionBuild.setText(_translate("MainWindow", "Build"))
 

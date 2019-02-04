@@ -6,6 +6,10 @@ import pwd
 def get_username():
     return pwd.getpwuid( os.getuid() )[ 0 ]
 
+
+def helloworld():
+    print ('Hello World')
+
 def load_project_structure(startpath, tree):
     # cc: https://stackoverflow.com/questions/5144830
     """
@@ -21,9 +25,17 @@ def load_project_structure(startpath, tree):
         parent_itm = QTreeWidgetItem(tree, [os.path.basename(element)])
         if os.path.isdir(path_info):
             load_project_structure(path_info, parent_itm)
-            # parent_itm.setIcon(0, QIcon('assets/folder.ico'))
-        # else:
-            # parent_itm.setIcon(0, QIcon('assets/file.ico'))
+            parent_itm.setIcon(0, QIcon('folder.png'))
+        else:
+            parent_itm.setIcon(0, QIcon('file.png'))
+
+
+def loadItem():
+    getSelected = ui.treeWidget.selectedItems()
+    if getSelected:
+        baseNode = getSelected[0]
+        getChildNode = baseNode.text(0)
+        print (getChildNode)
 
 if __name__ == "__main__":
     import sys
@@ -36,5 +48,7 @@ if __name__ == "__main__":
         dir_path + '/content'
         ,ui.treeWidget)
     ui.statusbar.showMessage(get_username() + ': ' + dir_path)
+    # ui.treeWidget.clicked['QModelIndex'].connect(helloworld)
+    ui.treeWidget.itemSelectionChanged.connect(loadItem)
     MainWindow.show()
     sys.exit(app.exec_())
