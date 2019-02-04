@@ -29,13 +29,9 @@ def load_project_structure(startpath, tree):
         else:
             parent_itm.setIcon(0, QIcon('file.png'))
 
-
-def loadItem():
-    getSelected = ui.treeWidget.selectedItems()
-    if getSelected:
-        baseNode = getSelected[0]
-        getChildNode = baseNode.text(0)
-        print (getChildNode)
+#@QtCore.pyqtSlot(QtWidgets.QTreeWidgetItem, int)
+def onItemClicked(it, col):
+    print(it, col, it.text(col))
 
 if __name__ == "__main__":
     import sys
@@ -48,7 +44,6 @@ if __name__ == "__main__":
         dir_path + '/content'
         ,ui.treeWidget)
     ui.statusbar.showMessage(get_username() + ': ' + dir_path)
-    # ui.treeWidget.clicked['QModelIndex'].connect(helloworld)
-    ui.treeWidget.itemSelectionChanged.connect(loadItem)
+    ui.treeWidget.itemClicked.connect(onItemClicked)
     MainWindow.show()
     sys.exit(app.exec_())
