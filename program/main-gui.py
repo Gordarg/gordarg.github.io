@@ -1,7 +1,10 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
 import os
-import gui
 import pwd
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+import gui
+import main
 
 def get_username():
     return pwd.getpwuid( os.getuid() )[ 0 ]
@@ -42,11 +45,14 @@ if __name__ == "__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = gui.Ui_MainWindow()
     ui.setupUi(MainWindow)
+
     dir_path = os.path.split(os.path.abspath(os.path.dirname(os.path.realpath(__file__))))[0]
     load_project_structure(
         dir_path + '/content'
         ,ui.treeWidget)
     ui.statusbar.showMessage(get_username() + ': ' + dir_path)
     ui.treeWidget.itemClicked.connect(onItemClicked)
+    ui.actionBuild.triggered.connect(main.Run)
+    
     MainWindow.show()
     sys.exit(app.exec_())
