@@ -11,13 +11,6 @@ def helloworld():
     print ('Hello World')
 
 def load_project_structure(startpath, tree):
-    # cc: https://stackoverflow.com/questions/5144830
-    """
-    Load Project structure tree
-    :param startpath: 
-    :param tree: 
-    :return: 
-    """
     from PyQt5.QtWidgets import QTreeWidgetItem
     from PyQt5.QtGui import QIcon
     for element in os.listdir(startpath):
@@ -29,9 +22,19 @@ def load_project_structure(startpath, tree):
         else:
             parent_itm.setIcon(0, QIcon('file.png'))
 
-#@QtCore.pyqtSlot(QtWidgets.QTreeWidgetItem, int)
+def getItemFullPath(item):
+    out = item.text(0)
+
+    if item.parent():
+        out = getItemFullPath(item.parent()) + "/" + out
+    else:
+        out =  "../content/" + out
+    return out;
+
+
 def onItemClicked(it, col):
-    print(it, col, it.text(col))
+    # print(it, col, it.text(col))
+    print(getItemFullPath(it))
 
 if __name__ == "__main__":
     import sys
