@@ -34,6 +34,12 @@ def getItemFullPath(item):
         out =  "../content/" + out
     return out;
 
+def newFolder():
+    print ('New Folder')
+
+def newFile():
+    print ('New File')
+
 
 def onItemClicked(it, col):
     # print(it, col, it.text(col))
@@ -53,6 +59,8 @@ if __name__ == "__main__":
     ui.statusbar.showMessage(get_username() + ': ' + dir_path)
     ui.treeWidget.itemClicked.connect(onItemClicked)
     ui.actionBuild.triggered.connect(main.Run)
-    
+    ui.actionFile.triggered.connect(newFile)
+    ui.actionFolder.triggered.connect(newFolder)
+
     MainWindow.show()
     sys.exit(app.exec_())
