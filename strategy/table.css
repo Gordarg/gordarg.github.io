@@ -1,0 +1,80 @@
+table {
+    border-collapse: collapse;
+    text-align: right;
+    width: 100%;
+    background-color: white;
+}
+table td, table th {
+    padding: 3px 10px;
+}
+table thead th, table tbody th {
+   background:-webkit-gradient( linear, right top, right bottom, color-stop(0.05, #8C8C8C), color-stop(1, #7D7D7D) );
+   background:-moz-linear-gradient( center top, #8C8C8C 5%, #7D7D7D 100% );
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#7D7D7D');
+   background-color:#8C8C8C;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-right: 1px solid #A3A3A3;
+}
+table thead th:first-child {
+    border: none;
+}
+table tbody td {
+    color: rgb(0, 86, 88);
+    border-right: 1px solid #DBDBDB;
+   font-size: 12px;
+   font-weight: normal;
+}
+table tbody tr:nth-child(2n) td {
+    background: #EBEBEB;
+    color: rgb(0, 82, 78);
+}
+table tbody td:first-child {
+    border-right: none;
+}
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+table tfoot td div {
+    border-top: 1px solid #8C8C8C;
+   background: #EBEBEB;
+}
+table tfoot td {
+    padding: 0;
+    font-size: 12px 
+}
+table tfoot td div{
+    padding: 2px;
+}
+table tfoot td ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-align: left;
+}
+table tfoot li {
+    display: inline;
+}
+table tfoot li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 1px;
+   color: #F5F5F5;
+   border: 1px solid #8C8C8C;
+   -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background:-webkit-gradient( linear, right top, right bottom, color-stop(0.05, #8C8C8C), color-stop(1, #7D7D7D) );
+   background:-moz-linear-gradient( center top, #8C8C8C 5%, #7D7D7D 100% );
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#7D7D7D');
+   background-color:#8C8C8C;
+}
+table tfoot ul.active, table tfoot ul a:hover {
+    text-decoration: none;
+   border-color: #7D7D7D;
+    color: #F5F5F5;
+    background: none;
+    background-color:#8C8C8C;
+}
