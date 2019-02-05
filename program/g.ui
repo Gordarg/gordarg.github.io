@@ -23,6 +23,9 @@
       <height>351</height>
      </rect>
     </property>
+    <property name="plainText">
+     <string>Hello world</string>
+    </property>
    </widget>
    <widget class="QTreeWidget" name="treeWidget">
     <property name="geometry">
@@ -62,6 +65,7 @@
     </widget>
     <addaction name="actionOpen"/>
     <addaction name="menuNew"/>
+    <addaction name="actionDelete"/>
     <addaction name="actionSave"/>
     <addaction name="actionBuild"/>
    </widget>
@@ -95,6 +99,11 @@
   <action name="actionSave">
    <property name="text">
     <string>Save</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
    </property>
   </action>
  </widget>
