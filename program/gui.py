@@ -48,7 +48,6 @@ class Ui_MainWindow(object):
         self.actionDelete.setObjectName("actionDelete")
         self.menuNew.addAction(self.actionFile)
         self.menuNew.addAction(self.actionFolder)
-        self.menuFile.addAction(self.actionOpen)
         self.menuFile.addAction(self.menuNew.menuAction())
         self.menuFile.addAction(self.actionDelete)
         self.menuFile.addAction(self.actionSave)
@@ -62,6 +61,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Docs Editor"))
+        self.plainTextEdit.setPlainText(_translate("MainWindow", "Hello world"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuNew.setTitle(_translate("MainWindow", "New"))
         self.actionOpen.setText(_translate("MainWindow", "Open Project"))

@@ -14,6 +14,7 @@ import main
 dir_path = os.path.split(os.path.abspath(os.path.dirname(os.path.realpath(__file__))))[0] + '/content'
 _translate = QtCore.QCoreApplication.translate
 current_dir = current_selected = dir_path
+content = ''
 
 def get_username():
     return pwd.getpwuid( os.getuid() )[ 0 ]
@@ -67,9 +68,21 @@ def delete():
             os.remove(current_selected)
         
         reset_project_structure()
-        load_project_structure(dir_path,ui.treeWidget)
+        load_project_structure(dir_path, ui.treeWidget)
+
+def save():
+    with open(current_selected, "w") as mdfile:
+        print(ui.plainTextEdit.toPlainText(), file = mdfile)
+        msgBox = QMessageBox()
+        msgBox.setIcon(QMessageBox.Information)
+        msgBox.setWindowTitle("Save file")
+        msgBox.setText("Changes saved to:\n" + current_selected)
+        msgBox.setInformativeText("Use button below to access previous content")
+        msgBox.setDetailedText(content)
+        msgBox.exec_()
 
 def selectionChanged():
+    global content
     if len(ui.treeWidget.selectedItems()) < 1:
         print ('selection cleared')
         return
@@ -84,7 +97,8 @@ def selectionChanged():
     ui.statusbar.showMessage(get_username() + ': ' + current_selected)
     if os.path.isfile(current_selected):
         with open(current_selected) as f:
-            ui.plainTextEdit.setPlainText(_translate("MainWindow", ''.join(f.readlines())))
+            content = ''.join(f.readlines())
+            ui.plainTextEdit.setPlainText(_translate("MainWindow", content))
     else:
         ui.plainTextEdit.setPlainText(_translate("MainWindow", ''))
 
@@ -104,6 +118,7 @@ if __name__ == "__main__":
     ui.actionFile.triggered.connect(newFile)
     ui.actionFolder.triggered.connect(newFolder)
     ui.actionDelete.triggered.connect(delete)
+    ui.actionSave.triggered.connect(save)
 
     MainWindow.show()
     sys.exit(app.exec_())

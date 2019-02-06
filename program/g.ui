@@ -63,7 +63,6 @@
      <addaction name="actionFile"/>
      <addaction name="actionFolder"/>
     </widget>
-    <addaction name="actionOpen"/>
     <addaction name="menuNew"/>
     <addaction name="actionDelete"/>
     <addaction name="actionSave"/>
