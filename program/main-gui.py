@@ -13,16 +13,13 @@ import main
 
 dir_path = os.path.split(os.path.abspath(os.path.dirname(os.path.realpath(__file__))))[0] + '/content'
 _translate = QtCore.QCoreApplication.translate
-current_selected = dir_path
-current_dir = ''
+current_dir = current_selected = dir_path
 
 def get_username():
     return pwd.getpwuid( os.getuid() )[ 0 ]
 
 def reset_project_structure():
-    #TODO: Make it possible
-    #pass
-    print('Hello world')
+    ui.treeWidget.clear()
 
 def load_project_structure(startpath, tree):
     for element in os.listdir(startpath):
@@ -73,13 +70,17 @@ def delete():
         load_project_structure(dir_path,ui.treeWidget)
 
 def selectionChanged():
+    if len(ui.treeWidget.selectedItems()) < 1:
+        print ('selection cleared')
+        return
     it = ui.treeWidget.selectedItems()[0]
     global current_dir
     global current_selected
     current_dir = current_selected = getItemFullPath(it)
     if os.path.isfile(current_selected):
         current_dir = os.path.dirname(current_selected)
-    print(current_dir)
+    print('working directory: ' + current_dir)
+    print('selected file/folder: ' + current_selected)
     ui.statusbar.showMessage(get_username() + ': ' + current_selected)
     if os.path.isfile(current_selected):
         with open(current_selected) as f:
