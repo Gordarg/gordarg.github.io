@@ -119,6 +119,7 @@ if __name__ == "__main__":
     ui.actionFolder.triggered.connect(newFolder)
     ui.actionDelete.triggered.connect(delete)
     ui.actionSave.triggered.connect(save)
+    #TODO: Add rename
 
     MainWindow.show()
     sys.exit(app.exec_())

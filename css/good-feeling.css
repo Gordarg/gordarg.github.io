@@ -71,3 +71,8 @@ body .content{
     flex: 3 45em;
     margin: 1em;
 }
+body .content img{
+    max-width: 50%;
+    margin: 0 auto 0 auto;
+    display: block;
+}

@@ -1,0 +1,5 @@
+![Gordarg Logo](brand/Logo.png)
+![Gordarg Logo](brand/Colorful.svg)
+![Gordarg Logo](brand/MonoChrome.svg)
+![Gordarg Logo](brand/Outline.svg)
+![Gordarg Logo](brand/Type.svg)
