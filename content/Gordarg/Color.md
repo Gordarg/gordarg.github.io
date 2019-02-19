@@ -1,3 +1,4 @@
 [//]: # (Convert to MarkDown)
 
-[Our strategic details](content/Gordarg/Color.html)
+[Our color details](content/Gordarg/Color.html)
+
