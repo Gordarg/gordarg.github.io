@@ -8,6 +8,7 @@
     1. Strategy
 - Snow Framework
     1. Installation
+    1. Architecture
     1. Posts Type
     1. Posts Life Cycle
     1. Posts Levels

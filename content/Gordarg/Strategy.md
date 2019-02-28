@@ -1,1 +1,1 @@
-[Our strategic details](strategy/index.html)
+[Continue to the document](strategy/index.html)
