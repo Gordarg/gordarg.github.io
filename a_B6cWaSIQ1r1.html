@@ -12,20 +12,52 @@
     <h1>Gordarg</h1>
     <img src="brand/Icon.png" alt="Gordarg Logo" />
     <span>We build services</span>
-</header><ul class="navigation">Gordarg<li><a href="a_CQZ1Yn9vUu_.html">Logo</a></li><li><a href="a_CBw94_T3zHH.html">Color</a></li><li><a href="a_V9HahBXX0m2.html">Font</a></li><li><a href="a_mAE2hW1MHgQ.html">Strategy</a></li>Snow Framework<li><a href="a_B6cWaSIQ1r1.html">Installation</a></li><li><a href="a_85sJ_vXws5R.html">Architecture</a></li><li><a href="a_p7SRkHJg0TN.html">Posts Type</a></li><li><a href="a_6D3T-0Bu8r5.html">Posts Life Cycle</a></li><li><a href="a_ERd3hwMBgeF.html">Posts Levels</a></li><li><a href="a_rLTNTr0TKbq.html">Roles</a></li><li><a href="a_OeiPFf0_N8W.html">Development - Notation</a></li>Gordafarid<li><a href="a_M5wmw8clF9F.html">About</a></li></ul><div class="content"><h1>Installation:</h1>
+</header><ul class="navigation">Gordarg<li><a href="a_CQZ1Yn9vUu_.html">Logo</a></li><li><a href="a_CBw94_T3zHH.html">Color</a></li><li><a href="a_V9HahBXX0m2.html">Font</a></li><li><a href="a_mAE2hW1MHgQ.html">Strategy</a></li>Snow Framework<li><a href="a_B6cWaSIQ1r1.html">Installation</a></li><li><a href="a_85sJ_vXws5R.html">Architecture</a></li><li><a href="a_p7SRkHJg0TN.html">Posts Type</a></li><li><a href="a_6D3T-0Bu8r5.html">Posts Life Cycle</a></li><li><a href="a_ERd3hwMBgeF.html">Posts Levels</a></li><li><a href="a_rLTNTr0TKbq.html">Roles</a></li><li><a href="a_OeiPFf0_N8W.html">Development - Notation</a></li>Gordafarid<li><a href="a_M5wmw8clF9F.html">About</a></li></ul><div class="content"><h1>Manual Installation:</h1>
 
 <ol>
-<li><p>Run Database Script</p></li>
-<li><p>Copy Files to WWW Root</p></li>
-<li><p>Edit Variable/ Files</p></li>
-</ol>
+<li><p>Install IIS, Apache, nginx, Zend Server, WildFly, appserver.io, or etc ...</p>
 
-<h1>Server Configuration</h1>
-
-<p>Enable short tags on server
+<pre><code>Notes:
+Enable short tags on server
+Enable mysqli extension
 Enable Engine using following syntax:
     $ sudo a2enmod rewrite
-    $ sudo systemctl restart apache2</p>
+    $ sudo systemctl restart apache2
+</code></pre></li>
+<li><p>Install MySQL DBMS</p></li>
+<li><p>Clone project to web server's root directory</p>
+
+<pre><code>Notes:
+Allow read+execute
+</code></pre></li>
+<li><p>Create database</p></li>
+<li><p>Generate schema</p>
+
+<pre><code>Script files:
+database/KMS.sql
+database/Logs.sql
+</code></pre></li>
+<li><p>Config Framework</p>
+
+<pre><code>Store Database details, languages, Brand and SEO Details in `/Config.php`
+BASEURL: HTTP(S) internet address which is accessable by browser and agents
+</code></pre></li>
+<li><p>Config web-client</p>
+
+<pre><code>Store baseurl in /public/js/Hi.js
+</code></pre></li>
+<li><p>Create default user</p>
+
+<pre><code>INSERT INTO `users` (Username, HashPassword, Role)
+        VALUES ('admin','fdcfc214459c57ab954b9a8ebde4a96ad761411d94e2fb8a414c0d25d38d2de3c831ce12eff572177b038bb610e301bb924dfc90833804a4409cd0c0e594d70e', 'ADMIN'
+        )
+
+And use following
+Username: admin
+HashPassword: 123
+for dashboard login
+</code></pre></li>
+</ol>
 </div><footer>&copy; 2018, Gordarg</footer>
 </body>
 </html>
