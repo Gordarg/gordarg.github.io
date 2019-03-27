@@ -14,8 +14,51 @@
     <span>We build services</span>
 </header><ul class="navigation">Gordarg<li><a href="a_CQZ1Yn9vUu_.html">Logo</a></li><li><a href="a_CBw94_T3zHH.html">Color</a></li><li><a href="a_V9HahBXX0m2.html">Font</a></li><li><a href="a_mAE2hW1MHgQ.html">Strategy</a></li>Snow Framework<li><a href="a_B6cWaSIQ1r1.html">Installation</a></li><li><a href="a_85sJ_vXws5R.html">Architecture</a></li><li><a href="a_p7SRkHJg0TN.html">Posts Type</a></li><li><a href="a_6D3T-0Bu8r5.html">Posts Life Cycle</a></li><li><a href="a_ERd3hwMBgeF.html">Posts Levels</a></li><li><a href="a_rLTNTr0TKbq.html">Roles</a></li><li><a href="a_5CxLZ1O3Fgz.html">API</a></li><li><a href="a_OeiPFf0_N8W.html">Development - Notation</a></li><li><a href="a_DBToK6hDt1Q.html">Powered by Gordarg</a></li>Gordafarid<li><a href="a_M5wmw8clF9F.html">About</a></li></ul><div class="content"><h1>Notes:</h1>
 
-<p>Use PascalCase for class names and functions
-Use lower_case for private and in-function variables</p>
+<h2>Path to controller: {ROOT}/controllers/{CONTROLLER}Controller.php</h2>
+
+<h2>GET: Send parameters as URI QueryString</h2>
+
+<h2>POST: Send parameters as form-data</h2>
+
+<hr/>
+
+<h1>Functions:</h1>
+
+<h1>Login</h1>
+
+<h2>CONTROLLER: auth | METHOD: POST</h2>
+
+<h2>PARAMS:</h2>
+
+<ul>
+<li>Username</li>
+<li><p>Password</p>
+
+<h2>RESPONSE:</h2></li>
+<li><p>if login failed: false</p></li>
+<li>if login success:
+<ol>
+<li>Username: Users username</li>
+<li>Token: Login token used in other api parts</li>
+</ol></li>
+</ul>
+
+<hr/>
+
+<h1>Validate Token</h1>
+
+<h2>CONTROLLER: auth | METHOD: POST</h2>
+
+<h2>PARAMS:</h2>
+
+<ul>
+<li>Username</li>
+<li><p>Token</p>
+
+<h2>RESPONSE:</h2></li>
+<li><p>if was valid: true</p></li>
+<li>if was invalid: false</li>
+</ul>
 </div><footer>&copy; 2018, Gordarg</footer>
 </body>
 </html>
