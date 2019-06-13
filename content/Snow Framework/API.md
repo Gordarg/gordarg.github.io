@@ -32,3 +32,9 @@ Functions:
 ## RESPONSE:
 - if was valid: true
 - if was invalid: false
+
+<hr/>
+TODO:
+- model/PathAccessLevel
+- model/Log
+- lib/ ...

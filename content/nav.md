@@ -6,6 +6,7 @@
     1. Color
     1. Font
     1. Strategy
+    1. Badges
 - Snow Framework
     1. Installation
     1. Architecture
