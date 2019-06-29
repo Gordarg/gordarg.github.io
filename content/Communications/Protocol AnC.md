@@ -33,7 +33,8 @@ Gordarg Protocol of A&C is a win-win method of external supervise. Regarding to 
 
 # Red lines
 
-- ...
+- Both sides must accept and execute Non-Disclosure Agreement (NDA)
+- Both sides must protect intellectual property rights on inventions and innovations
 
 # Instructions
 
@@ -48,3 +49,7 @@ Gordarg Protocol of A&C is a win-win method of external supervise. Regarding to 
 4- Agreement on task end status.
 
 5- Final payments.
+
+# Updates
+
+Consumers have this right to become notified on protocol changes.
