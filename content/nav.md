@@ -2,11 +2,13 @@
 [//]: # (use four spaces and a number following by a dot for file ->     1.)
 
 - Gordarg
+    1. Strategy
+    1. Spin-out
     1. Logo
     1. Color
     1. Font
-    1. Strategy
     1. Badges
+    1. Partners
 - Communications
     1. CSR Training Service
     1. Protocol AnC
