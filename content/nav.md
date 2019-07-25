@@ -21,7 +21,6 @@
     1. Roles
     1. API
     1. Development - Notation
-    1. Powered by Gordarg
 - Gordafarid
     1. About
 
